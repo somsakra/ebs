@@ -1,0 +1,27 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "volumes": [
+      {
+        "name": "demo",
+        "host": {
+          "sourcePath": "/app"
+        }
+      } 
+    ],
+    "containerDefinitions": [
+      {
+        "name": "demo",
+        "image": "<id>.dkr.ecr.<region>.amazonaws.com/<repo-name>",
+        "memory": 128,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 3000
+          }
+        ]
+      }
+    ]
+
+
+    
+  }

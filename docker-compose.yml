@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  demo:
+    build: .
+    container_name: demo
+    ports:
+      - '80:3000'
